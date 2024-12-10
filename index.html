@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-info" aria-label="Main navigation">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"> <h1>BMI Calculator</h1></a>
+                <ul class="navbar-nav list-group">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">BMI Calculator</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="bulking.html">Bulking Weight</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cutting.html">Cutting Weight</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="calorie.html">Calorie Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sources.html">Sources</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="bg-light py-5">
+    <div class="container">
+        <h1 class="text-center mb-4">BMI Calculator</h1>
+        <p id="narration" class="text-center"></p>
+    
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+        
+            <div class="mb-3">
+              <label for="units" class="form-label">Units</label>
+              <select name="units" id="units" class="form-select">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="Cm/Kg">Cm/Kg</option>
+                <option value="In/Lbs">In/Lbs</option>
+              </select>
+            </div>
+    
+    
+            <div class="mb-3">
+              <label for="sex" class="form-label">Sex</label>
+              <select name="sex" id="sex" class="form-select">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+    
+    
+            <div class="mb-3">
+              <label for="weight" class="form-label">Weight</label>
+              <input type="number" name="weight" id="weight" required class="form-control" placeholder="Enter weight">
+            </div>
+    
+        
+            <div class="mb-3">
+              <label for="height" class="form-label">Height</label>
+              <input type="number" name="height" id="height" required class="form-control" placeholder="Enter height">
+            </div>
+    
+            
+            <div class="d-grid">
+              <button type="button" id="calculate" class="btn btn-primary">Calculate</button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="container-fluid full-height">
+            <div class="row justify-content-center w-100">
+              <div class="col-md-8 col-lg-6">
+          <h1 class="text-center pt-5">What is BMI and why should I care?</h1>
+          <p class="pt-2">Body Mass Index (BMI) is a measure of body fat based on your weight in relation to your height. While it is not always the best measure of a healthy bodyweight, it does provide a good baseline for individuals looking to take control of their health. "Depending on where you are in the world, you might calculate BMI using metric or imperial units, with the metric system being more widely adopted"(<a href="https://www.nasm.org/resources/bmi-calculator?srsltid=AfmBOoqs44M9bTsXm1pXl1MstfqAq2Ypu4FA9YRpl_AA_CsDy5gjQM7_">NASM</a>). This BMI Calculator is intended for adults and will give inaccurate calculations for those below 20 years old. It becomes less accurate in individuals with high percentages of muscle compared to fat as it does not account for the weight of the muscle well. "Essentially, BMI doesn't distinguish between fat and muscle. Instead, it's based on extensive data to predict health outcomes for large groups of people. When looking at broad populations, BMI can give a general idea about obesity levels and can predict risks for conditions like heart disease or diabetes" (<a href="https://www.nasm.org/resources/bmi-calculator?srsltid=AfmBOoqs44M9bTsXm1pXl1MstfqAq2Ypu4FA9YRpl_AA_CsDy5gjQM7_">NASM</a>). For example it may claim that a 210 pound 6' bodybuilder is overweight. However the BMI scale truly shines when used for the average individual who is not a bodybuilder. The BMI scale gives a good baseline for these individuals to figure out how to take control of their health to reach a healthy weight. "BMI works pretty well if your height is around the average. But if you're notably shorter or taller than most, it might not be as accurate. In simpler terms, shorter folks might find BMI paints them as having more body fat than they do, while taller individuals might find the opposite" (<a href="https://www.nasm.org/resources/bmi-calculator?srsltid=AfmBOoqs44M9bTsXm1pXl1MstfqAq2Ypu4FA9YRpl_AA_CsDy5gjQM7_">NASM</a>).</p>
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      <footer class="bg-dark  text-light text-center">
+        <p class="pt-3 pb-3 mb-0">This is a BMI calculator and calorie tracker made by Adam Goodson.</p>
+    </footer>
+
+<script src="scripts/bmi.js"></script>
+</body>
+</html>
